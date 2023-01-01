@@ -28,6 +28,9 @@ require 'rspec/rails'
 
 RSpec.configure do |config|
   config.before(:each) do
+    config.color = true
+    config.formatter = :documentation
+    config.order = 'default'
     # The items and orders above were created out of order *ON PURPOSE* -- there are many ways to solve
     # these problems, but we found that students were writing incorrect queries that still passed because
     # they were relying on the order that these things were created.
